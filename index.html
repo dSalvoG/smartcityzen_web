@@ -1,0 +1,625 @@
+<!-- Estructura  base de la WEB-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Smart Cityzen</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/png" href="img/newLogo.png" />
+
+	<!-- Material Icons Google-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+	 crossorigin="anonymous">
+
+
+
+	<!--Core CSS-->
+	<link rel="stylesheet" type="text/css" href="css/core.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+
+	<!--Fuente del texto-->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+
+	<!--Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="css/new_main.css">
+	<link rel="stylesheet" type="text/css" href="css/team.css">
+
+	<!-- SCRIPT -->
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="js/verticalMenu.js"></script>
+	<script src="js/mobileSize.js"></script>
+	<script src="js/quotes.js"></script>
+
+	<script>
+		$(document).ready(function () {
+
+			$("#myVerticalnav").hide();
+			$(".hide").hide();
+			$(".show").show();
+
+			verticalMenu();
+			mobileSize();
+
+		});
+	</script>
+</head>
+
+<body class="background-white">
+	<!-- Side Menu -->
+	<div id="mySidenav" class="sidenav">
+		<div class="menu_left d-flex">
+			<div class="menu_links">
+				<div class="menu_list">
+					<ul class="menu_type">
+						<li class="menu_element">
+							<!-- <a href="lab.html">Lab</a> -->
+							<a href="construction.html">Lab</a>
+						</li>
+						<li class="menu_element">
+							<a href="team.html">Equipo</a>
+						</li>
+						<li class="menu_element">
+							<a href="wedo.html">Qué hacemos?</a>
+						</li>
+						<hr style="border: 0.5px solid #0d0d0d;">
+						<li class="active">
+							<a href="index.html">Home</a>
+						</li>
+						<!-- <li class="menu_element">
+							<a href="http://localhost:4000/">Blog</a>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+			<div class="d-flex">
+				<ul class="menu_info" style="position:absolute; left:10%; display: flex;">
+					<li style="float: left; margin-right: 20px;">
+						<button type="button" class="btn btn-lab background-black text-white" onclick="window.location.href='construction.html'">Start
+							Project</button>
+					</li>
+					<li style="float: left;margin-right: 20px;">
+						<button type="button" class="btn btn-aca background-black text-white" onclick="window.location.href='construction.html'">Start
+							Course</button>
+					</li>
+				</ul>
+
+			</div>
+			<ul class="menu_info">
+				<li style="float:right;">
+					<a href="team.html#contact">Dónde estamos?</a>
+				</li>
+				<li style="float:right;clear: both">
+					t:+34 675916546
+				</li>
+				<li style="float:right;clear: both">
+					m:smartcityzenlab@gmail.com
+				</li>
+				<li class="list-inline-item" style="float:right;clear: both;">
+					<a href="mailto:smartcityzenlab@gmail.com">
+						<i class="far fa-envelope"></i>
+					</a>
+				</li>
+
+				<li class="list-inline-item" style="float:right">
+					<a href="https://medium.com/@smartcityzenlab">
+						<i class="fab fa-medium"></i>
+					</a>
+				</li>
+				<li class="list-inline-item" style="float:right">
+					<a href="https://twitter.com/SmartCityzenLab">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="https://www.instagram.com/smartcityzenlab/">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+		<div class="menu_right">
+			<img style="height: 100%" src="img/parallax/header-bg.jpg">
+		</div>
+	</div>
+	<!-- Vertical Menu -->
+	<div id="myVerticalnav" class="sidenav">
+		<div class="menu_top">
+			<div class="menu_links_small">
+				<div class="menu_list">
+					<ul class="menu_type">
+						<li class="menu_element">
+							<a href="construction.html">Lab</a>
+						</li>
+						<li class="menu_element">
+							<a href="team.html">Equipo</a>
+						</li>
+						<li class="menu_element">
+							<a href="wedo.html">Qué hacemos?</a>
+						</li>
+						<hr style="border: 0.5px solid #0d0d0d;">
+						<li class="active">
+							<a href="index.html">Home</a>
+						</li>
+						<!-- <li class="menu_element">
+							<a href="http://localhost:4000/">Blog</a>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+			<ul class="menu_info_small d-block">
+				<div class="d-flex">
+					<li style="float: left; margin-right: 20px;">
+						<button type="button" class="btn btn-lab background-black text-white" onclick="window.location.href='construction.html'">Start
+							Project</button>
+					</li>
+					<li style="float: left;">
+						<button type="button" class="btn btn-aca background-black text-white" onclick="window.location.href='construction.html'">Start
+							Course</button>
+					</li>
+				</div>
+				<div class="d-flex" style="position:absolute; left:9%;margin-top: 10px;margin-bottom: 20px;">
+					<li class="list-inline-item" style="float:right;clear: both;">
+						<a href="mailto:smartcityzenlab@gmail.com">
+							<i class="far fa-envelope"></i>
+						</a>
+					</li>
+
+					<li class="list-inline-item" style="float:right">
+						<a href="https://medium.com/@smartcityzenlab">
+							<i class="fab fa-medium"></i>
+						</a>
+					</li>
+					<li class="list-inline-item" style="float:right">
+						<a href="https://twitter.com/SmartCityzenLab">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://www.instagram.com/smartcityzenlab/">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+				</div>
+			</ul>
+		</div>
+	</div>
+
+	<div id="main">
+		<div class="clip-element logo">
+			<div class="logo_nav">
+				<a href="index.html">
+					<i id="logo_light" style="transition: 0.5s;" class="logo_size show">
+						<img src="img/logoWebRectWhite.png" alt="SmartCityzenLogo">
+					</i>
+					<i id="logo_dark" style="transition: 0.5s;" class="hide">
+						<img src="img/logoWebRect.png" alt="SmartCityzenLogo">
+					</i>
+				</a>
+			</div>
+		</div>
+		<div class="clip-element menu">
+			<div class="menu_block">
+				<i id="menu_icon" style="transition: 0.5s;" class="show material-icons menu_bar text-white">
+					menu
+				</i>
+				<i id="close_icon" style="transition: 0.5s;" class="hide material-icons menu_bar text-black">
+					clear
+				</i>
+			</div>
+		</div>
+		<div id="mail" class="clip-element mail">
+			<div class="show mail_nav">
+				<a href="mailto:smartcityzenlab@gmail.com">
+					<span>s</span><span id="2">m</span><span>a</span><span>r</span><span>t</span><span>c</span><span>i</span><span>t</span><span>y</span><span>z</span><span>e</span><span>n</span><span>l</span><span>a</span><span>b</span><span>@</span><span>g</span><span>m</span><span>a</span><span>i</span><span>l</span><span>.</span><span>c</span><span>o</span><span>m</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="homepage background-black d-block">
+			<header id="header_" class="head-home background-black ">
+				<div class="bg-container text-white">
+					<div class="bg-intro">
+						<h1 class="intro-text">
+							<span>
+								Rediseñando<br>
+							</span>
+							<span>
+								las ciudades<br>
+							</span>
+							<span>
+								del futuro.
+							</span>
+						</h1>
+					</div>
+					<div class="intro-col">
+						<div class="col">
+							<p class="p-intro">
+								Creemos que las comunidades inteligentes son sostenibles,
+								colaborativas e inclusivas.
+							</p>
+						</div>
+						<div class="col">
+							<p class="p-intro">
+								Apostamos por la tecnología como hub de innovación y desarrollo
+								para crear estrategias eficientes, ágiles y coordinadas.
+							</p>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- QUOTES -->
+			<section id="quotes_section" class="background-secondary">
+				<div class="cont">
+					<div class="row">
+						<div class="col-lg-12">
+							<span id="quotes" class="motiv-text text-lowercase">"CULTURE DETERMINES PLACES & CREATIVITY SHAPES ITS LIFE"</span>
+						</div>
+						<div class="col-lg-12" style="padding-right: 100px">
+							<span id="authorQuote">
+								Charles Landry
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- STRATEGY -->
+			<!-- Section Version 2.0 -->
+			<section id="citizens" class="background-black text-white">
+				<div class="cont">
+					<div class="row row_remove">
+						<div class="col col-section">
+							<div class="col-lg-12 text-center">
+								<div class="t-section">ciudadanos</div>
+								<BR>
+							</div>
+							<h4 class="h-section">movimiento</h4>
+							<p class="text-muted p-section">
+								Los ciudadanos representan el movimiento en las ciudades. La capacidad de adaptarse de una ciudad al cambio,
+								viene definida por cómo los ciudadanos aprenden y utilizan los recursos de la ciudad adaptarse al cambio
+								constante.
+							</p>
+						</div>
+
+						<div class="col-sm-5 not_show_mobile" style="padding-right:0px;">
+							<div class="not-mobile r-img" style="background-image: url('img/parallax/people.jpg'""></div>
+						</div>
+
+						<div class="
+							 bg-parallax show_mobile" style="background-image: url('img/parallax/people.jpg')">
+
+							</div>
+						</div>
+
+						<div class="row row_remove">
+							<div class="col col-section">
+								<div class="col-lg-12 text-center">
+									<div class="t-section">data</div>
+									<BR>
+								</div>
+								<h4 class="h-section">aprendizaje colectivo</h4>
+								<p class="text-muted p-section">
+									Las comunidades inteligentes emplean los datos para asimilar y aprender del cambio. Estos datos
+									se obtienen de las redes de sensores que componen una ciudad sensible.
+								</p>
+							</div>
+
+							<div class="col-sm-5 not_show_mobile" style="padding-right:0px;">
+								<div class="not-mobile r-img" style="background-image: url('img/parallax/metro.jpg')"></div>
+							</div>
+
+							<div class="bg-parallax show_mobile" style="background-image: url('img/parallax/metro.jpg')">
+							</div>
+						</div>
+						<div class="row row_remove">
+							<div class="col col-section">
+								<div class="col text-center">
+									<div class="t-section">ciudades</div>
+									<BR>
+								</div>
+								<h4 class="h-section">ecosistema vivo</h4>
+								<p class="text-muted p-section">
+									Las ciudades representan el órgano sensible que define el espacio en el que los ciudadanos
+									interactuan y evolucionan como colectivo. La forma en la que la ciudad dispone sus recursos a la comunidad
+									establecerá el modelo de inclusión de esta.
+								</p>
+							</div>
+
+							<div class="col-sm-5 not_show_mobile" style="padding-right:0px;">
+								<div class="not-mobile r-img" style="background-image: url('img/parallax/city2.jpg')"></div>
+							</div>
+
+							<div class="bg-parallax show_mobile" style="background-image: url('img/parallax/city2.jpg')"></div>
+						</div>
+			</section>
+
+			<!-- WHAT WE DO -->
+			<section class="background-white text-center" id="team">
+				<div class="cont">
+					<div class="row row_remove">
+						<div class="col-lg-12 text-center">
+							<div class="t-section">nuestro proceso de aprendizaje</div>
+							<BR>
+						</div>
+					</div>
+					<div class="row row_remove">
+						<div class="col-sm-3">
+							<div class="team-member">
+								<i class="material-icons" style="font-size:8vw;">
+									settings_input_antenna
+								</i>
+								<h4>observamos</h4>
+							</div>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="team-member">
+								<i class="material-icons" style="font-size:8vw;">
+									cloud_upload
+								</i>
+								<h4>clasificamos</h4>
+							</div>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="team-member">
+								<i class="material-icons" style="font-size:8vw;">
+									refresh
+								</i>
+								<h4>procesamos</h4>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="team-member">
+								<i class="material-icons" style="font-size:8vw;">
+									share
+								</i>
+								<h4>informamos</h4>
+							</div>
+						</div>
+					</div>
+
+					<div class="row row_remove">
+						<div class="col-sm-12 text-center">
+							<p class="text-muted p-section">
+								Somos un grupo de innovación tecnológica, cuyo objetivo es convertir las ciudades en espacios
+								de convivencia mucho más eficientes, sostenibles e inclusivo.
+
+								Trabajamos sobre todo el proceso de aprendizaje: observando, procesando e informando a los ciudadanos
+								sobre la actividad y el cambio en las ciudades.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- OUR HOME / CONTACT -->
+			<section id="contact" class="background-white text-black">
+				<div class="cont">
+					<div class="row row_remove">
+						<div class="col col-section" style="padding-top:0vh;">
+							<div class="col-lg-12 text-center">
+								<div class="t-section">Nuestro Hub</div>
+								<BR>
+							</div>
+
+							<h4 class="h-contact">Conócenos</h4>
+							<div class="p-contact text-muted">
+								<p>
+									Somos un grupo de estudiantes de la UPV con el objetivo de rediseñar las ciudades del futuro.
+								</p>
+								<p>
+									Puedes encontrarnos en el <span style="font-weight:600">Design Factory UPV</span>:
+								</p>
+								<p>
+									Edificio 4K, Planta baja <BR>
+									Cami de Vera, s/n<BR>
+									46022 Valencia<BR>
+									España </p>
+								<p>
+									Ayudanos a rediseñar las ciudades del futuro,<br>
+									contactanos a través de:
+								</p>
+								<p>
+									t: +34 675 916 546<BR>
+									m: smartcityzenlab@gmail.com
+								</p>
+							</div>
+
+						</div>
+
+						<div class="col-sm-5 not_show_mobile" style="padding-right:0px;">
+							<div class="not-mobile r-img" style="background-image: url('img/parallax/CasaAlumno.jpg')"></div>
+						</div>
+
+						<div class="bg-parallax show_mobile" style="background-image: url('img/parallax/map.jpg')"></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<p class="text-center">
+					Con la colaboración de:
+					<br>
+				</p>
+				<div id="logos" class="row text-center">
+					<div class="col-lg-3">
+					</div>
+					<div class="col-lg-3">
+						<a href="http://www.upv.es/#">
+							<img src="img/logos/upv.png" width="225px" height="75px">
+						</a>
+					</div>
+					<div class="col-lg-3">
+						<a href="http://generacionespontanea.upv.es/">
+							<img src="img/logos/ge.png" width="220px" height="75px">
+						</a>
+					</div>
+
+				</div>
+				<div class="row text-center terms-text">
+					<div class="col-md-12">
+						<span style="font-size: 15px; text-align: center;">síguenos</span>
+						<ul class="list-inline quicklinks" style="font-size: 20px; text-align: center;">
+							<li class="list-inline-item">
+								<a href="https://twitter.com/SmartCityzenLab">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://medium.com/@smartcityzenlab">
+									<i class="fab fa-medium"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://www.instagram.com/smartcityzenlab/">
+									<i class="fab fa-instagram"></i>
+								</a>
+							</li>
+							<!-- <li class="list-inline-item">
+										  <a href="#">
+											<i class="fab fa-facebook-f"></i>
+										  </a>
+										</li> -->
+							<!-- <li class="list-inline-item"> -->
+							<!-- <a href="#"> -->
+							<!-- <i class="fab fa-linkedin-in"></i> -->
+							<!-- </a> -->
+							<!-- </li> -->
+							<li class="list-inline-item">
+								<a href="mailto:smartcityzenlab@gmail.com">
+									<i class="far fa-envelope"></i>
+								</a>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="row text-center terms-text">
+					<div class="col-md-12">
+						<span class="copyright">Copyright &copy; SmartCityzen 2019</span>
+						<ul class="list-inline quicklinks">
+							<li class="list-inline-item">
+								<a href="#">Privacy Policy</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#">Terms of Use</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+	</div>
+
+	<script>
+		$(window).scroll(function () {
+			var mid_screen = 1150;
+			var scroll = $(window).scrollTop();
+			var windowheight = $(window).height();
+			// console.log(windowheight);
+
+			//>=, not <=
+			var margin = 95;
+			var mail_children = $('#mail div a').children();
+			var mail = document.querySelector('#mail').getBoundingClientRect();
+			var header = document.querySelector('#header_').getBoundingClientRect();
+			var quotes = document.querySelector('#quotes_section').getBoundingClientRect();
+			var citizens = document.querySelector('#citizens').getBoundingClientRect();
+			var team = document.querySelector('#team').getBoundingClientRect();
+			var contact = document.querySelector('#contact').getBoundingClientRect();
+			var secondchange = margin + quotes.height + citizens.height;
+			var thirdchange = secondchange + team.height;
+
+			mail_children.each(function (index) {
+				if ((scroll >= margin + index * 4 && scroll < margin + quotes.height + index * 4) ||
+					scroll >= secondchange + index * 4 && scroll < secondchange + team.height + 20 + index * 4 ||
+					scroll >= thirdchange + index * 4 + 10) {
+					//clearHeader, not clearheader - caps H
+
+					$(this).addClass("blackmail");
+					$(this).removeClass("whitemail");
+
+				} else {
+					$(this).removeClass("blackmail");
+					$(this).addClass("whitemail");
+
+				}
+			});
+
+			//boton de menú
+			//Cambiamos el margen en función de si la pantalla es pequeña,
+			//puesto que el menu cambia de sitio
+			if ($(this).width() < mid_screen) {
+				var headeroffset = header.height;
+				var margin = margin + headeroffset - 110;
+				console.log(margin);
+
+			} else {
+				//Margen para el boton de menu
+				var headeroffset = header.height / 2 - 80;
+				var margin = margin + headeroffset;
+				console.log(margin);
+			}
+			secondchange = margin + quotes.height + citizens.height;
+			thirdchange = secondchange + team.height;
+
+			if ((scroll >= margin && scroll < margin + quotes.height) ||
+				scroll >= secondchange && scroll < secondchange + team.height + 20 ||
+				scroll >= thirdchange) {
+				//clearHeader, not clearheader - caps H
+
+				$('#menu_icon').removeClass("text-white");
+				$('#menu_icon').addClass("text-black");
+
+			} else {
+				$('#menu_icon').addClass("text-white");
+				$('#menu_icon').removeClass("text-black");
+			}
+
+			var headeroffset = header.height;
+			var margin = header.height - 20;
+			secondchange = margin + quotes.height + citizens.height;
+			thirdchange = secondchange + team.height;
+			//Cambio de color para el logo
+			if ((scroll >= margin && scroll < margin + quotes.height) ||
+				scroll >= secondchange && scroll < secondchange + team.height + 20 ||
+				scroll >= thirdchange) {
+				//clearHeader, not clearheader - caps H
+
+
+				$('#logo_light').hide();
+				$('#logo_dark').show();
+			} else {
+				$('#logo_dark').hide();
+				$('#logo_light').show();
+
+			}
+
+
+		}); //missing );
+
+		$(window).resize(verticalMenu);
+		$(window).resize(mobileSize);
+		mobileSize();
+	</script>
+
+
+
+
+</body>
+
+</html>

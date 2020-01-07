@@ -1,0 +1,708 @@
+/* general properties */
+
+body,
+html {
+    width: 100%;
+    min-height: 100vh;
+    min-width: 320px;
+
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+pre,
+q,
+samp,
+section,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: 0 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+
+    min-height: 100vh;
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#citizens {
+    overflow-x: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/*
+@media screen and (min-width: 2000px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+
+/* GENERAL ELEMENT  STRUCTURES */
+
+section {
+    overflow-x: hidden;
+}
+
+.cont {
+    overflow-x: hidden;
+}
+
+
+.bg-container {
+    position: relative;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+    margin-right: 8vw;
+    padding-top: 20vh;
+    padding-bottom: 15vh;
+    padding-left: 6.25%;
+}
+
+@media screen and (min-width: 1920px) {
+    .intro-text {
+        line-height: 87%;
+        font-size: 8vw;
+        font-weight: 600;
+    }
+
+    .logo_nav a i img {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .intro-text {
+        line-height: 87%;
+        font-size: calc(8vw + 6 * ((100vw - 320px) / 680));
+        font-weight: 600;
+    }
+
+    .logo_nav a i img {
+        width: 30%;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .intro-text {
+        line-height: 87%;
+        font-size: 12vw;
+        font-weight: 600;
+    }
+
+    .logo_nav a i img {
+        width: 55%;
+    }
+}
+
+
+.intro-col {
+    float: left;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.col {
+    max-width: 400px;
+    margin-right: 10px;
+}
+
+.l-section {
+    position: relative;
+    float: left;
+    max-width: 45%;
+    height: 100%;
+    vertical-align: center;
+    overflow: hidden;
+}
+
+.l-text {
+    display: block;
+    vertical-align: middle;
+    padding: 10vh;
+}
+
+
+
+
+
+/* font size for elements */
+
+.t-section {
+    font-size: 40px;
+}
+
+.p-section {
+    font-size: 20px;
+}
+
+.h-intro {
+    font-size: 25px;
+}
+
+.p-intro {
+    max-width: 600px;
+    font-weight: 500;
+}
+
+.h-contact {
+    font-size: 20px;
+}
+
+.p-contact {
+    font-size: 20px;
+}
+
+
+@media screen and (min-width:1150px) {
+
+    .h-intro {
+        font-size: 40px;
+    }
+
+    .p-intro {
+        font-size: 20px;
+    }
+
+    .t-section {
+        font-size: 80px;
+    }
+
+    .h-section {
+        font-size: 40px;
+    }
+
+    .p-section {
+        font-size: 30px;
+    }
+
+    .h-contact {
+        font-size: 30px;
+    }
+
+    .p-contact {
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+/* END ELEMENT STRUCTURE */
+
+div {
+    display: block;
+}
+
+.people {
+    /* The image used */
+    background-image: url("../img/parallax/people.jpg");
+}
+
+.city {
+    /* The image used */
+    background-image: url("../img/parallax/header-bg.jpg");
+}
+
+.metro {
+    /* The image used */
+    background-image: url("../img/parallax/metro.jpg");
+}
+
+.bg-parallax {
+    /* Set a specific height */
+    height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media (min-width: 768px) {
+    section {
+        padding: 150px 0;
+    }
+}
+
+section {
+    display: block;
+    width: 100%;
+    background-color: #f7fcfc;
+    padding: 100px 0;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    padding-left: 6.25%;
+    position: relative;
+}
+
+
+
+footer {
+    padding: 2%;
+    position: relative;
+    bottom: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    min-width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+    background-color: #f7fcfc;
+    color: #0d0d0d;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.terms-text {
+    margin: 1%;
+    font-size: 10px;
+}
+
+
+
+#logos {
+    margin: 1vh;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    overflow: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.not-mobile img {
+    height: 100%;
+}
+
+.mobile {
+    clear: both;
+
+
+}
+
+.mobile img {
+    height: 30%;
+}
+
+.menu_left {
+    width: 100%;
+    min-width: 450px;
+    z-index: 3;
+    height: 100vh;
+    padding-right: 50vh;
+    background-color: #f7fcfc;
+    display: flex;
+    position: relative;
+}
+
+.menu_links {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 10vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.menu_list {
+    position: relative;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    padding: 5vh 8.82353% 60px;
+}
+
+.menu_type {
+    padding-bottom: 1rem;
+}
+
+
+ul.menu_type>li {
+    list-style-type: none;
+    visibility: inherit;
+    opacity: 1;
+    margin-bottom: 1rem;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.menu_info {
+    z-index: 2;
+    width: auto;
+    position: absolute;
+    bottom: 40px;
+    right: 50vh;
+    margin-right: 4.16667%;
+    padding-bottom: 1rem;
+    list-style-type: none;
+}
+
+ul.menu_info>li {
+    color: #0d0d0d;
+    font-size: 14px;
+}
+
+.menu_right {
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 4;
+    position: absolute;
+    height: 100%;
+    width: 50vh;
+    background-color: #0d0d0d;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+}
+
+li.active>a,
+li.active>a:hover {
+    color: #0d0d0d;
+    text-decoration: none;
+    font-size: 2.35rem;
+    font-weight: 600;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    line-height: 1.25;
+}
+
+li.menu_element>a {
+    color: #0d0d0d;
+    text-decoration: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    line-height: 1.25;
+    font-size: 2.35rem;
+}
+
+
+li.menu_element:hover>a {
+    text-decoration: none;
+    color: #0d0d0d;
+    font-size: 4rem;
+    font-weight: 600;
+    transition: 0.3;
+}
+
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #0d0d0d;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    text-decoration: underline;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* hidden properties */
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+/* button properties */
+
+.btn {
+    font-family: 'Raleway', 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.btn-xl {
+    font-size: 18px;
+    padding: 20px 40px;
+}
+
+.btn-primary {
+    background-color: #e1523d;
+    border-color: #e1523d;
+}
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
+    background-color: #e1523d !important;
+    border-color: #e1523d !important;
+    color: #e1523d;
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+    -webkit-box-shadow: #f7f7f7 !important;
+    box-shadow: #f7f7f7 !important;
+}
+
+.btn-blog {
+    height: 40px;
+    padding-top: 14px;
+    font-size: 15px;
+    font-weight: 600 !important;
+    color: #0d0d0d !important;
+    background: #f7fcfc;
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 3px solid #0d0d0d !important;
+    border-radius: 40px;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-blog:hover {
+
+    color: #f7fcfc !important;
+    background: #0d0d0d;
+}
+
+/* Margin auto */
+.mt-auto,
+.auto {
+    margin-top: auto !important;
+}
+
+.mb-auto,
+.auto {
+    margin-bottom: auto !important;
+}
+
+
+
+/* position properties */
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+/* display properties */
+.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.d-inline {
+    display: inline !important;
+}
+
+.d-binline {
+    display: inline-block !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+/* text properties */
+.none-decoration {
+    text-decoration: none !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.text-lowercase {
+    text-transform: lowercase !important;
+}
+
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-white {
+    color: #f7fcfc !important;
+}
+
+.text-black {
+    color: #0d0d0d !important;
+}
+
+/* background properties */
+
+.background-black {
+    background-color: #0d0d0d !important;
+}
+
+.background-white {
+    background-color: #f7fcfc !important;
+}
+
+.background-primary {
+    background-color: rgb(225, 82, 61) !important;
+}
+
+.background-secondary {
+    background-color: rgb(255, 239, 114) !important;
+}
+
+.background-dark {
+    background-color: #5F4B8B;
+}

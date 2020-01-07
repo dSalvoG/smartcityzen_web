@@ -1,0 +1,88 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.contruction {
+    /* The image used */
+    background-image: url("../img/parallax/city2.jpg");
+    /* Full height */
+    height: 100%;
+    width: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+
+.bgText{
+    font-size: 6vw;
+}
+
+.bgP{
+    font-size: 2vw;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 70px;
+    padding: 40px;
+    right: 50%;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hr-text {
+    margin: auto;
+    width: 40%;
+}
+
+.btn:hover, .btn-cons {
+    border: 1.5px solid #0d0d0d;
+    background-color: #f7fcfc !important;
+    color: #0d0d0d !important;
+    font-size: 28px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.btn-cons{
+    position: absolute;
+    min-width: 150px;
+    top:60%;
+    left: 35%;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.btn-lab {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.btn-aca {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.btn:hover,
+.btn-aca | .btn-lab {
+    border: 1.5px solid #0d0d0d;
+    background-color: #f7fcfc !important;
+    color: #0d0d0d !important;
+}
+

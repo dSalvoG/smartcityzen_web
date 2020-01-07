@@ -1,0 +1,47 @@
+.team-intro {
+  line-height: 98%;
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
+.col-team {
+  max-width: 50vw;
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+}
+
+#team a {
+  text-decoration: none;
+  color: #0d0d0d;
+  font-size: 15px;
+}
+
+.team-light {
+  background-color: #f7fcfc;
+}
+
+.team-member {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 225px;
+  height: 225px;
+  border: 7px solid #f7f7f7;
+}
+
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+.team-member p {
+  margin-top: 0;
+}
+
+.contact-info {
+  font-size: 20px;
+  font-weight: 400;
+}

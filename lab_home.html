@@ -1,0 +1,581 @@
+<!-- Estructura  base de la WEB-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Smart Cityzen</title>
+
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/png" href="img/newLogo.png" />
+
+	<!-- Material Icons Google-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+	 crossorigin="anonymous">
+
+
+
+	<!--Core CSS-->
+	<link rel="stylesheet" type="text/css" href="css/core.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+
+	<!--Fuente del texto-->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+
+	<!--Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="css/new_main.css">
+	<link rel="stylesheet" type="text/css" href="css/wedo.css">
+
+	<!-- SCRIPT -->
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="js/verticalMenu.js"></script>
+	<script src="js/mobileSize.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			$("#myVerticalnav").hide();
+			$(".hide").hide();
+			$(".show").show();
+
+			verticalMenu();
+			mobileSize();
+
+		});
+	</script>
+</head>
+
+<body class="background-white">
+	<!-- Side Menu -->
+	<div id="mySidenav" class="sidenav">
+		<div class="menu_left">
+			<div class="menu_links">
+				<div class="menu_list">
+					<ul class="menu_type">
+						<li class="active">
+							<a href="lab.html">Lab</a>
+						</li>
+						<li class="menu_element">
+							<a href="team.html">Equipo</a>
+						</li>
+						<li class="menu_element">
+							<a href="wedo.html">Qué hacemos?</a>
+						</li>
+						<hr style="border: 0.5px solid #0d0d0d;">
+						<li class="menu_element">
+							<a href="index.html">Home</a>
+						</li>
+						<!-- <li class="menu_element">
+							<a href="http://localhost:4000/">Blog</a>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+			<ul class="menu_info" style="position:absolute; left:10%; display: flex;">
+				<li style="float: left; margin-right: 20px;">
+					<button type="button" class="btn btn-lab background-black text-white" onclick="window.location.href='lab_home.html'">Start
+						Project</button>
+				</li>
+				<li style="float: left;">
+					<button type="button" class="btn btn-aca background-black text-white" onclick="window.location.href='academy.html'">Start
+						Course</button>
+				</li>
+			</ul>
+			<ul class="menu_info">
+				<li style="float:right;">
+					<a href="#contact">Dónde estamos?</a>
+				</li>
+				<li style="float:right;clear: both">
+					t:+34 675916546
+				</li>
+				<li style="float:right;clear: both">
+					m:smartcityzenlab@gmail.com
+				</li>
+				<li class="list-inline-item" style="float:right;clear: both;">
+					<a href="mailto:smartcityzenlab@gmail.com">
+						<i class="far fa-envelope"></i>
+					</a>
+				</li>
+
+				<li class="list-inline-item" style="float:right">
+					<a href="https://medium.com/@smartcityzenlab">
+						<i class="fab fa-medium"></i>
+					</a>
+				</li>
+				<li class="list-inline-item" style="float:right">
+					<a href="https://twitter.com/SmartCityzenLab">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+		<div class="menu_right">
+			<img src="img/parallax/header-bg.jpg">
+		</div>
+	</div>
+	<!-- Vertical Menu -->
+	<div id="myVerticalnav" class="sidenav">
+		<div class="menu_top">
+			<div class="menu_links_small">
+				<div class="menu_list">
+					<ul class="menu_type">
+						<li class="active">
+							<a href="lab.html">Lab</a>
+						</li>
+						<li class="menu_element">
+							<a href="team.html">Equipo</a>
+						</li>
+						<li class="menu_element">
+							<a href="wedo.html">Qué hacemos?</a>
+						</li>
+						<hr style="border: 0.5px solid #0d0d0d;">
+						<li class="menu_element">
+							<a href="index.html">Home</a>
+						</li>
+						<!-- <li class="menu_element">
+							<a href="http://localhost:4000/">Blog</a>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+			<ul class="menu_info d-block" style="position:absolute; left:25%;margin-top: 10px;">
+				<div class="d-flex">
+					<li style="float: left; margin-right: 20px;">
+						<button type="button" class="btn btn-lab background-black text-white" onclick="window.location.href='lab_home.html'">Start
+							Project</button>
+					</li>
+					<li style="float: left;">
+						<button type="button" class="btn btn-aca background-black text-white" onclick="window.location.href='academy.html'">Start
+							Course</button>
+					</li>
+				</div>
+				<div class="d-flex" style="position:absolute; left:25%;margin-top: 10px;margin-bottom: 20px;">
+					<li class="list-inline-item" style="float:right;clear: both;">
+						<a href="mailto:smartcityzenlab@gmail.com">
+							<i class="far fa-envelope"></i>
+						</a>
+					</li>
+
+					<li class="list-inline-item" style="float:right">
+						<a href="https://medium.com/@smartcityzenlab">
+							<i class="fab fa-medium"></i>
+						</a>
+					</li>
+					<li class="list-inline-item" style="float:right">
+						<a href="https://twitter.com/SmartCityzenLab">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+				</div>
+			</ul>
+		</div>
+
+	</div>
+
+	<div id="main">
+		<div class="main-container"></div>
+		<div class="clip-element logo">
+			<div class="logo_nav">
+				<a href="index.html">
+					<i id="logo_dark" style="transition: 0.5s;" class="show">
+						<img src="img/logoWebRect.png" alt="SmartCityzenLogo">
+					</i>
+					<i id="logo_light" style="transition: 0.5s;" class="hide">
+						<img src="img/logoWebRectWhite.png" alt="SmartCityzenLogo">
+					</i>
+				</a>
+			</div>
+		</div>
+		<div class="clip-element menu">
+			<div class="menu_block">
+				<i id="menu_icon" style="transition: 0.5s;" class="show material-icons menu_bar text-black">
+					menu
+				</i>
+				<i id="close_icon" style="transition: 0.5s;" class="hide material-icons menu_bar text-black">
+					clear
+				</i>
+			</div>
+		</div>
+		<div id="mail" class="clip-element mail">
+			<div class="show mail_nav">
+				<a href="mailto:smartcityzenlab@gmail.com" class="text-black">
+					<span>s</span><span id="2">m</span><span>a</span><span>r</span><span>t</span><span>c</span><span>i</span><span>t</span><span>y</span><span>z</span><span>e</span><span>n</span><span>l</span><span>a</span><span>b</span><span>@</span><span>g</span><span>m</span><span>a</span><span>i</span><span>l</span><span>.</span><span>c</span><span>o</span><span>m</span>
+				</a>
+			</div>
+		</div>
+		<!-- <div class="start-project">
+				<div class="clip-element-project">
+					<a class="button-primary" href="/lab/lab.html"><span>Start Project</span></a>
+				</div>
+			</div> -->
+		<div class="homepage background-secondary">
+			<header id="header_" class="head-home background-secondary">
+				<div class="bg-container background-secondary text-black">
+					<div class="bg-intro">
+						<h1 class="intro-text">
+							<span>
+								Work Hard,<br>
+							</span>
+							<span>
+								Dream Big
+							</span>
+						</h1>
+					</div>
+					<div class="intro-col">
+						<div class="col">
+							<p class="h-intro">
+								El genio se hace con 1% de talento, <br>
+								y 99% de trabajo.
+							</p>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div id="parallax-city" class="city bg-parallax"></div>
+
+			<section class="background-black text-white text-center" id="content">
+				<div class="cont">
+					<div class="row">
+						<div class="col-lg-12 text-center">
+							<div class="t-section">strategy</div>
+							<BR>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="team-member">
+								<!-- <img class="mx-auto rounded-circle" src="img/team/david.png" alt="David Salvo"> -->
+								<i class="material-icons" style="font-size:50px;">
+									location_on
+								</i>
+								<h4 class="h-section">city</h4>
+								<p class="text-muted">The City it's the place where change flows throught. They represents the path where
+									citizens and
+									tech coexists in order to achieve urban transformation to smart cities.</p>
+
+							</div>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="team-member">
+								<!-- <img class="mx-auto rounded-circle" src="img/team/david.png" alt="David Salvo"> -->
+								<i class="material-icons" style="font-size:50px">
+									timeline
+								</i>
+								<h4 class="h-section">technology</h4>
+								<p class="text-muted">As the enviroment throught information flow point to point. In orther to connect city
+									with citizens.</p>
+
+							</div>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="team-member">
+								<!-- <img class="mx-auto rounded-circle" src="img/team/david.png" alt="David Salvo"> -->
+								<i class="material-icons" style="font-size:50px">
+									storage
+								</i>
+								<h4 class="h-section">data</h4>
+								<p class="text-muted">Represents the base of what we share as information. In orther to set up collective
+									learning city growth.</p>
+
+							</div>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="team-member">
+								<!-- <img class="mx-auto rounded-circle" src="img/team/david.png" alt="David Salvo"> -->
+								<i class="material-icons" style="font-size:50px">
+									group
+								</i>
+								<h4 class="h-section">citizens</h4>
+								<p class="text-muted">Citizens means movement and define the way how cities adapts to the changes.</p>
+
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-12 text-center">
+								<h3 style="margin-top: 30px;" class="section-subheading text-muted">We are a technological
+									work group that
+									looks for most innovative tech solutions in orther to make cities more eficient, sustainable and human
+									friendly. We work throught the all process: collecting, processing and sharing data from city to their
+									citizens, boosting collective learning city growth.</h3>
+							</div>
+						</div>
+					</div>
+			</section>
+
+			<div id="parallax-city2" class="city bg-parallax"></div>
+
+			<!-- Section Version 2.0 -->
+			<section id="citizens" class="background-black text-white">
+				<div class="cont">
+					<div class="row">
+						<div class="col col-section">
+							<div class="col-lg-12 text-center">
+								<div class="t-section">ciudadanos</div>
+								<BR>
+							</div>
+							<h4 class="h-section">movimiento</h4>
+							<p class="text-muted p-section">
+								Los ciudadanos representan el movimiento en las ciudades. La capacidad de adaptarse de una ciudad al cambio,
+								viene definida por cómo los ciudadanos aprenden y utilizan los recursos de la ciudad adaptarse al cambio
+								constante.</p>
+						</div>
+
+						<div class="col r-img mobile-sx">
+							<img class="mobile-sx" style="min-height:100%" src="img/parallax/people.jpg">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col col-section">
+							<div class="col-lg-12 text-center">
+								<div class="t-section">data</div>
+								<BR>
+							</div>
+							<h4 class="h-section">aprendizaje colectivo</h4>
+							<p class="text-muted p-section">
+								Las comunidades inteligentes emplean los datos para asimilar y aprender del cambio. Estos datos
+								se obtienen de las redes de sensores que componen una ciudad sensible.
+							</p>
+						</div>
+
+						<div class="col r-img mobile-sx">
+							<img class="mobile-sx" style="min-height:100%" src="img/parallax/metro.jpg">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col col-section">
+							<div class="col text-center">
+								<div class="t-section">ciudades</div>
+								<BR>
+							</div>
+							<h4 class="h-section">sentido</h4>
+							<p class="text-muted p-section">
+								Las ciudades representan el órgano sensible que define el espacio en el que los ciudadanos
+								interactuan y evolucionan como colectivo. La forma en la que la ciudad dispone sus recursos a la comunidad
+								establecerá el modelo de inclusión de esta.
+							</p>
+
+						</div>
+
+						<div class="col r-img mobile-sx">
+							<img class="mobile-sx" style="min-height:100%" src="img/parallax/header-bg.jpg">
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- <div id="parallax-city" class="city bg-parallax"></div> -->
+
+			<section id="smartcityzen" class="background-black text-white">
+				<div class="cont">
+					<div class="row">
+						<div class="col col-section">
+							<div class="col text-center">
+								<div class="t-section">Proyectos</div>
+								<BR>
+							</div>
+							<h4 class="h-section">City Scope</h4>
+							<p class="text-muted p-section">The City it's the place where change flows throught. They represents the path
+								where
+								citizens and
+								tech coexists in order to achieve urban transformation to smart cities.</p>
+
+							<!-- <h4 class="h-section">CitizenOS</h4>
+							<p class="text-muted p-section">The City it's the place where change flows throught. They represents the path
+								where
+								citizens and
+								tech coexists in order to achieve urban transformation to smart cities.</p> -->
+
+						</div>
+
+						<div class="mobile-sx r-img">
+							<img class="mobile-sx" style="min-height:100%" src="img/parallax/header-bg.jpg">
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<!-- Footer -->
+			<footer id="footer">
+				<p class="text-center">
+					Con la colaboración de:
+					<br>
+				</p>
+				<div id="logos" class="row text-center">
+					<div class="col-lg-3">
+					</div>
+					<div class="col-lg-3">
+						<a href="http://www.upv.es/#">
+							<img src="img/logos/upv.png" width="225px" height="75px">
+						</a>
+					</div>
+					<div class="col-lg-3">
+						<a href="http://generacionespontanea.upv.es/">
+							<img src="img/logos/ge.png" width="220px" height="75px">
+						</a>
+					</div>
+
+				</div>
+				<div id="social">
+					<div class="social-text">
+						<p style="margin:0">follow us</p>
+					</div>
+					<div class="social-icon">
+						<ul class="list-inline social-buttons d-flex">
+							<li class="list-inline-item">
+								<a href="https://twitter.com/SmartCityzenLab">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://medium.com/@smartcityzenlab">
+									<i class="fab fa-medium"></i>
+								</a>
+							</li>
+							<!-- <li class="list-inline-item">
+								  <a href="#">
+									<i class="fab fa-facebook-f"></i>
+								  </a>
+								</li> -->
+							<!-- <li class="list-inline-item"> -->
+							<!-- <a href="#"> -->
+							<!-- <i class="fab fa-linkedin-in"></i> -->
+							<!-- </a> -->
+							<!-- </li> -->
+							<li class="list-inline-item">
+								<a href="mailto:smartcityzenlab@gmail.com">
+									<i class="far fa-envelope"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row text-center terms-text">
+					<div class="col-md-12">
+						<span class="copyright">Copyright &copy; SmartCityzen 2019</span>
+						<ul class="list-inline quicklinks">
+							<li class="list-inline-item">
+								<a href="#">Privacy Policy</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#">Terms of Use</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+	</div>
+
+	<script>
+		var small_screen = 1150;
+		$(window).scroll(function () {
+
+
+
+			var scroll = $(window).scrollTop();
+			var windowheight = $(window).height();
+			console.log(windowheight);
+
+			//>=, not <=
+			var margin = 95;
+			var mail_children = $('#mail div a').children();
+			var mail = document.querySelector('#mail').getBoundingClientRect();
+			var header = document.querySelector('#header_').getBoundingClientRect();
+			var parallax = document.querySelector('#parallax-city').getBoundingClientRect();
+			var content = document.querySelector('#content').getBoundingClientRect();
+			var parallax2 = document.querySelector('#parallax-city2').getBoundingClientRect();
+			var content2 = document.querySelector('#content2').getBoundingClientRect();
+			var smartcityzen = document.querySelector('#smartcityzen').getBoundingClientRect();
+			var footer = document.querySelector('#footer').getBoundingClientRect();
+			var secondchange = margin + parallax.height + content.height + parallax2.height;
+			var thirdchange = secondchange + content2.height + smartcityzen.height;
+
+			mail_children.each(function (index) {
+				if ((scroll >= margin + index * 4 && scroll < margin + secondchange + index * 4) ||
+					scroll >= margin + secondchange + index * 4 && scroll < thirdchange + 20 + index * 4) {
+
+					$(this).removeClass("blackmail");
+					$(this).addClass("whitemail");
+
+				} else {
+					$(this).addClass("blackmail");
+					$(this).removeClass("whitemail");
+
+
+				}
+
+
+			});
+
+			//boton de menú
+			//Cambiamos el margen en función de si la pantalla es pequeña,
+			//puesto que el menu cambia de sitio
+			if ($(this).width() < small_screen) {
+				var headeroffset = header.height;
+				var margin = margin + headeroffset - 110;
+				console.log(margin);
+
+			} else {
+				//Margen para el boton de menu
+				var headeroffset = header.height / 2 - 80;
+				var margin = margin + headeroffset;
+				console.log(margin);
+			}
+
+			if ((scroll >= margin && scroll < margin + secondchange + thirdchange)) {
+				//clearHeader, not clearheader - caps H
+
+				$('#menu_icon').addClass("text-white");
+				$('#menu_icon').removeClass("text-black");
+
+			} else {
+				$('#menu_icon').removeClass("text-white");
+				$('#menu_icon').addClass("text-black");
+
+			}
+
+			var headeroffset = header.height;
+			var margin = header.height - 20;
+
+			//Cambio de color para el logo
+			if ((scroll >= margin && scroll < margin + secondchange + thirdchange)) {
+				//clearHeader, not clearheader - caps H
+
+				$('#logo_dark').hide();
+				$('#logo_light').show();
+
+			} else {
+
+				$('#logo_light').hide();
+				$('#logo_dark').show();
+			}
+
+
+		}); //missing );
+
+		$(window).resize(verticalMenu);
+		$(window).resize(mobileSize);
+		mobileSize();
+	</script>
+</body>
+
+</html>

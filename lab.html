@@ -1,0 +1,424 @@
+<!-- Estructura  base de la WEB-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Smart Cityzen</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/newLogo.png" />
+
+    <!-- Material Icons Google-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+
+
+
+    <!--Core CSS-->
+    <link rel="stylesheet" type="text/css" href="css/core.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+
+    <!--Fuente del texto-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="css/new_main.css">
+    <link rel="stylesheet" type="text/css" href="css/lab.css">
+
+    <!-- SCRIPT -->
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="js/verticalMenu.js"></script>
+	<script src="js/mobileSize.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+			$("#myVerticalnav").hide();
+			$(".hide").hide();
+			$(".show").show();
+
+			verticalMenu();
+            mobileSize();
+            
+		});
+    </script>
+</head>
+
+<body class="background-white">
+    <!-- Side Menu -->
+    <div id="mySidenav" class="sidenav">
+        <div class="menu_left">
+            <div class="menu_links">
+                <div class="menu_list">
+                    <ul class="menu_type">
+                        <li class="active">
+                            <a href="lab.html">Lab</a>
+                        </li>
+                        <li class="menu_element">
+                            <a href="team.html">Equipo</a>
+                        </li>
+                        <li class="menu_element">
+                            <a href="wedo.html">Qué hacemos?</a>
+                        </li>
+                        <hr style="border: 0.5px solid #0d0d0d;">
+                        <li class="menu_element">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <!-- <li class="menu_element">
+                            <a href="http://localhost:4000/">Blog</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            <ul class="menu_info" style="position:absolute; left:10%; display: flex;">
+                <li style="float: left; margin-right: 20px;">
+                    <button type="button" class="btn btn-lab background-black text-white" onclick="window.location.href='lab_home.html'">Start
+                        Project</button>
+                </li>
+                <li style="float: left;">
+                    <button type="button" class="btn btn-aca background-black text-white" onclick="window.location.href='academy.html'">Start
+                        Course</button>
+                </li>
+            </ul>
+            <ul class="menu_info">
+                <li style="float:right;">
+                    <a href="#contact">Dónde estamos?</a>
+                </li>
+                <li style="float:right;clear: both">
+                    t:+34 675916546
+                </li>
+                <li style="float:right;clear: both">
+                    m:smartcityzenlab@gmail.com
+                </li>
+                <li class="list-inline-item" style="float:right;clear: both;">
+                    <a href="mailto:smartcityzenlab@gmail.com">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                </li>
+
+                <li class="list-inline-item" style="float:right">
+                    <a href="https://medium.com/@smartcityzenlab">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item" style="float:right">
+                    <a href="https://twitter.com/SmartCityzenLab">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="menu_right">
+            <img src="img/parallax/header-bg.jpg">
+        </div>
+    </div>
+    <!-- Vertical Menu -->
+    <div id="myVerticalnav" class="sidenav">
+        <div class="menu_top">
+            <div class="menu_links_small">
+                <div class="menu_list">
+                    <ul class="menu_type">
+                        <li class="active">
+                            <a href="lab.html">Lab</a>
+                        </li>
+                        <li class="menu_element">
+                            <a href="team.html">Equipo</a>
+                        </li>
+                        <li class="menu_element">
+                            <a href="wedo.html">Qué hacemos?</a>
+                        </li>
+                        <hr style="border: 0.5px solid #0d0d0d;">
+                        <li class="menu_element">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="menu_element">
+                            <a href="http://localhost:4000/">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="menu_info d-block" style="position:absolute; left:25%;margin-top: 10px;">
+                <div class="d-flex">
+                    <li style="float: left; margin-right: 20px;">
+                        <button type="button" class="btn btn-lab background-black text-white" onclick="window.location.href='lab_home.html'">Start
+                            Project</button>
+                    </li>
+                    <li style="float: left;">
+                        <button type="button" class="btn btn-aca background-black text-white" onclick="window.location.href='academy.html'">Start
+                            Course</button>
+                    </li>
+                </div>
+                <div class="d-flex" style="position:absolute; left:25%;margin-top: 10px;margin-bottom: 20px;">
+                    <li class="list-inline-item" style="float:right;clear: both;">
+                        <a href="mailto:smartcityzenlab@gmail.com">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item" style="float:right">
+                        <a href="https://medium.com/@smartcityzenlab">
+                            <i class="fab fa-medium"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item" style="float:right">
+                        <a href="https://twitter.com/SmartCityzenLab">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="main">
+        <div class="clip-element logo">
+            <div class="logo_nav">
+                <a href="index.html">
+                    <i id="logo_dark" style="transition: 0.5s;" class="hide">
+                        <img src="img/logoWebRect.png" alt="SmartCityzenLogo">
+                    </i>
+                    <i id="logo_light" style="transition: 0.5s;" class="show">
+                        <img src="img/logoWebRectWhite.png" alt="SmartCityzenLogo">
+                    </i>
+                </a>
+            </div>
+        </div>
+        <div class="clip-element menu">
+            <div class="menu_block">
+                <i id="menu_icon" style="transition: 0.5s;" class="show material-icons menu_bar text-white">
+                    menu
+                </i>
+                <i id="close_icon" style="transition: 0.5s;" class="hide material-icons menu_bar text-black">
+                    clear
+                </i>
+            </div>
+        </div>
+        <div id="mail" class="clip-element mail">
+            <div class="show mail_nav">
+                <a href="mailto:smartcityzenlab@gmail.com">
+                    <span>s</span><span id="2">m</span><span>a</span><span>r</span><span>t</span><span>c</span><span>i</span><span>t</span><span>y</span><span>z</span><span>e</span><span>n</span><span>l</span><span>a</span><span>b</span><span>@</span><span>g</span><span>m</span><span>a</span><span>i</span><span>l</span><span>.</span><span>c</span><span>o</span><span>m</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- head -->
+        <div class="homepage background-black">
+
+            <div class="lab-cont">
+                <div class="lab-head">
+                    <div class="text-lab text-white overlab">LAB</div>
+                    <div class="p-lab text-white hide overlab" style="background: #0d0d0d; padding: 10px;">Si tu idea pretende mejorar el estilo de vida de los ciudadanos. No esperes más!</div>
+                    <button type="button" class="btn btn-lab background-black text-white hide" onclick="window.location.href='lab_home.html'">Start
+                        Project</button>
+                </div>
+                <div class="academy-head">
+                    <div class="text-academy text-white overaca">ACADEMY</div>
+                    <div class="p-aca text-white hide overaca" style="background: #0d0d0d; padding: 10px;">Descubre toda la actualidad en innovación tecnológica para el desarrollo urbano sostenible.</div>
+                    <button type="button" class="btn btn-aca background-black text-white hide" onclick="window.location.href='academy.html'">Start
+                        Course</button>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <p class="text-center">
+                    Con la colaboración de:
+                    <br>
+                </p>
+                <div id="logos" class="row text-center">
+                    <div class="col-lg-3">
+                    </div>
+                    <div class="col-lg-3">
+                        <a href="http://www.upv.es/#">
+                            <img src="img/logos/upv.png" width="225px" height="75px">
+                        </a>
+                    </div>
+                    <div class="col-lg-3">
+                        <a href="http://generacionespontanea.upv.es/">
+                            <img src="img/logos/ge.png" width="220px" height="75px">
+                        </a>
+                    </div>
+
+                </div>
+                <div id="social">
+                    <div class="social-text">
+                        <p style="margin:0">síguenos</p>
+                    </div>
+                    <div class="social-icon">
+                        <ul class="list-inline social-buttons d-flex">
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/SmartCityzenLab">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://medium.com/@smartcityzenlab">
+                                    <i class="fab fa-medium"></i>
+                                </a>
+                            </li>
+                            <!-- <li class="list-inline-item">
+                                  <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                  </a>
+                                </li> -->
+                            <!-- <li class="list-inline-item"> -->
+                            <!-- <a href="#"> -->
+                            <!-- <i class="fab fa-linkedin-in"></i> -->
+                            <!-- </a> -->
+                            <!-- </li> -->
+                            <li class="list-inline-item">
+                                <a href="mailto:smartcityzenlab@gmail.com">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row text-center terms-text">
+                    <div class="col-md-12">
+                        <span class="copyright">Copyright &copy; SmartCityzen 2019</span>
+                        <ul class="list-inline quicklinks">
+                            <li class="list-inline-item">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Terms of Use</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+<script>
+    var small_screen = 1150;
+    $(window).scroll(function () {
+
+
+
+        var scroll = $(window).scrollTop();
+        var windowheight = $(window).height();
+        console.log(windowheight);
+
+        //>=, not <=
+        var margin = 40;
+        var mail_children = $('#mail div a').children();
+        var mail = document.querySelector('#mail').getBoundingClientRect();
+        var footer = document.querySelector('#footer').getBoundingClientRect();
+
+        mail_children.each(function (index) {
+            if (scroll >= margin + index * 4 && scroll) {
+                //clearHeader, not clearheader - caps H
+
+                $(this).addClass("blackmail");
+                $(this).removeClass("whitemail");
+
+            } else {
+                $(this).removeClass("blackmail");
+                $(this).addClass("whitemail");
+
+            }
+        });
+
+        //boton de menú
+        //Cambiamos el margen en función de si la pantalla es pequeña,
+        //puesto que el menu cambia de sitio
+        if ($(this).width() < small_screen) {
+            var headeroffset = header.height;
+            var margin = margin + headeroffset - 110;
+            console.log(margin);
+
+        } else {
+            //Margen para el boton de menu
+            var headeroffset = header.height / 2 - 80;
+            var margin = margin + headeroffset;
+            console.log(margin);
+        }
+        secondchange = margin + parallax.height + team.height;
+        thirdchange = secondchange + contact.height + footer.height;
+
+        // if ((scroll >= margin && scroll < margin + parallax.height) ||
+        //     scroll >= secondchange && scroll < secondchange + contact.height + 20 ||
+        //     scroll >= thirdchange) {
+        //     //clearHeader, not clearheader - caps H
+
+        //     $('#menu_icon').addClass("text-white");
+        //     $('#menu_icon').removeClass("text-black");
+
+        // } else {
+        //     $('#menu_icon').removeClass("text-white");
+        //     $('#menu_icon').addClass("text-black");
+
+        // }
+
+        var headeroffset = header.height;
+        var margin = header.height - 20;
+        secondchange = margin + parallax.height + team.height;
+        thirdchange = secondchange + contact.height + footer.height;
+        // //Cambio de color para el logo
+        // if ((scroll >= margin && scroll < margin + parallax.height) ||
+        //     scroll >= secondchange && scroll < secondchange + contact.height + 20 ||
+        //     scroll >= thirdchange) {
+        //     //clearHeader, not clearheader - caps H
+
+        //     $('#logo_dark').hide();
+        //     $('#logo_light').show();
+
+        // } else {
+
+        //     $('#logo_light').hide();
+        //     $('#logo_dark').show();
+        // }
+
+
+    }); //missing );
+
+
+    $(".lab-head").mousemove(function (event) {
+        // console.log("PageXY:", event.pageX, ",", event.pageY);
+        $(".overlab").show();
+        $(".overaca").hide();
+        $(".btn-lab").show();
+        $(".btn-aca").hide();
+        $(".lab-head").css("filter", "opacity(1)");
+        $(".lab-head").css("width", "70%");
+        $(".text-lab").css("right", "0");
+        $(".academy-head").css("width", "30%");
+        $(".academy-head").css("filter", "opacity(.7)");
+    });
+
+    $(".academy-head").mousemove(function (event) {
+        // console.log("PageXY:", event.pageX, ",", event.pageY);
+        $(".overaca").show();
+        $(".overlab").hide();
+        $(".btn-lab").hide();
+        $(".btn-aca").show();
+        $(".academy-head").css("filter", "opacity(1)");
+        $(".academy-head").css("width", "70%");
+        $(".text-academy").css("left", "-6%");
+        $(".lab-head").css("width", "30%");
+        $(".lab-head").css("filter", "opacity(.7)");
+    });
+
+    $(window).resize(verticalMenu);
+    $(window).resize(mobileSize);
+    mobileSize();
+</script>
+
+</html>

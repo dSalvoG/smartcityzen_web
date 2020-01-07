@@ -1,0 +1,125 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.lab-cont {
+    position: relative;
+    /* Full height */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.p-lab{
+    position: absolute;
+    max-width: 400px;
+    top:50%;
+    left: 35%;
+    font-size: 20px;
+    font-weight: 400;
+}
+.p-aca{
+    position: absolute;
+    max-width: 400px;
+    top:50%;
+    right: 35%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.btn{
+    border: 1.5px solid #f7fcfc;
+    filter: opacity(.85);
+}
+
+.btn:hover, .btn-aca | .btn-lab {
+    border: 1.5px solid #0d0d0d;
+    background-color: #f7fcfc !important;
+    color: #0d0d0d !important;
+    font-size: 28px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.btn-lab{
+    position: absolute;
+    top:60%;
+    left: 35%;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.btn-aca{
+    position: absolute;
+    top:60%;
+    right: 42%;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.text-division {
+    font-size: 8vh;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: rotate(270deg);
+}
+
+.text-lab {
+    font-size: 8vh;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: rotate(90deg);
+    transition: 0.6s;
+}
+
+.text-academy {
+    font-size: 8vh;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: rotate(270deg);
+    transition: 0.6s;
+}
+
+.lab-head {
+    /* The image used */
+    background-image: url("../img/parallax/metro.jpg");
+    right: 50%;
+    /* Full height */
+    height: 100%;
+    width: 50%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+
+/* 
+.lab-head:hover .overlay {
+    color: purple;
+} */
+
+.academy-head {
+    /* The image used */
+    background-image: url("../img/parallax/people.jpg");
+    left: 50%;
+    /* Full height */
+    height: 100%;
+    width: 50%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
